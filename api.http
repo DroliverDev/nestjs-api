@@ -1,0 +1,26 @@
+GET http://localhost:3000/orders
+
+###
+
+GET http://localhost:3000/orders/ae120892-01e3-41fb-83ad-1a830b87917c
+
+###
+POST http://localhost:3000/orders HTTP/1.1
+Content-Type: application/json
+
+{
+    "amount": 100
+}
+
+###
+PUT  http://localhost:3000/orders/ae120892-01e3-41fb-83ad-1a830b87917c
+Content-Type: application/json
+
+{
+    "amount": 500
+}
+
+###
+
+DELETE http://localhost:3000/orders/ae120892-01e3-41fb-83ad-1a830b87917c
+
